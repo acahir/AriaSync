@@ -19,9 +19,10 @@ You can download, built, and install the app onto your own devices. The biggest 
 
 1. Download Xcode from the macOS App Store
 2. Download this project either via zip file or git. 
-3. Open the AriaSync.xcodeproj file. 
-4. Signup for developer access at [Fitbit](https://dev.fitbit.com/login)
-5. Register an App with the following settings:
+3. Open the AriaSync.xcodeproj file.
+4. Download [OAuth2](https://github.com/p2/OAuth2) tag 4.2 and put in base of project.
+5. Signup for developer access at [Fitbit](https://dev.fitbit.com/login)
+6. Register an App with the following settings:
 - Application Name: AriaSync or Make one up
 - Description: Sync Aria information with Apple HealthKit
 - Application Website: Your website (doesn't really have to work)
@@ -36,7 +37,7 @@ Default Access Type: Read-Only
 
 Note: I'm not commenting on how all the information you entered relates to the API terms set out by Fitbit. You read them before agreeing to them didn't you?
 
-6. Copy the following info from the registration page:
+7. Copy the following info from the registration page:
   - OAuth 2.0 Client ID 
   - Client secret
   - callback URL
@@ -45,14 +46,10 @@ Note: I'm not commenting on how all the information you entered relates to the A
 
 Note: Technically the last two won't change, but it doesn't hurt to verify them as you'll see them in the code.
 
-7. Duplicate the files BuildConfig/debug.xcconfig and BuildConfig/release.xcconfig
-8. Edit those files and enter the Client ID and Client Secret into both of them. No quotes around them.
-9. If you used a different callback URL, there's a number of places in the code that it will need to be changed.
-- 
-- 
-- 
-- 
-10. Try running the project, it should launch in a simulator, but will work normally. See if you can log into Fitbit and sync your data. If it's all working, you can connect your phone to your computer and change the device to run it on. The app will stay on your phone even after you're done running it in XCode.
+8. Duplicate the files BuildConfig/debug.xcconfig and BuildConfig/release.xcconfig
+9. Edit those files and enter the Client ID and Client Secret into both of them. No quotes around them.
+10. If you used a different callback URL, there's a number of places in the code that it will need to be changed.
+11. Try running the project, it should launch in a simulator, but will work normally. See if you can log into Fitbit and sync your data. If it's all working, you can connect your phone to your computer and change the device to run it on. The app will stay on your phone even after you're done running it in XCode.
 
 
 ### Development Details
