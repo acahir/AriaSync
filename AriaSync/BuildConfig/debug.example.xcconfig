@@ -1,0 +1,12 @@
+//
+//  debug.example.xcconfig
+//  AriaSync
+//
+//  Created by Steve Cochran on 1/7/19.
+//
+
+// Configuration settings file format documentation can be found at:
+// https://help.apple.com/xcode/#/dev745c5c974
+
+FITBIT_API_CLIENT_ID=INSERT_FITBIT_API_CLIENT_ID
+FITBIT_API_CLIENT_SECRET=INSERT_FITBIT_API_CLIENT_SECRET

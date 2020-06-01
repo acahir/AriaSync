@@ -1,0 +1,37 @@
+[Debug] OAuth2: Initialization finished
+[Debug] OAuth2: Looking for items in keychain
+[Debug] OAuth2: Found access token, valid until 2018-10-20 00:49:21 +0000
+[Debug] OAuth2: Found refresh token
+dateRange: 2018-10-19 to 2018-10-19
+[Debug] getData: entering getData
+[Debug] OAuth2: Initialization finished
+[Debug] createDataRequest: urlString: https://api.fitbit.com/1/user/-/body/log/weight/date/2018-10-19/2018-10-19.json
+[Debug] OAuth2: REQUEST
+HTTP/1.1 GET https://api.fitbit.com/1/user/-/body/log/weight/date/2018-10-19/2018-10-19.json
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIyMkQ5MzYiLCJzdWIiOiIyMzNKNzIiLCJpc3MiOiJGaXRiaXQiLCJ0eXAiOiJhY2Nlc3NfdG9rZW4iLCJzY29wZXMiOiJyd2VpIiwiZXhwIjoxNTM5OTk2NTYxLCJpYXQiOjE1Mzk5Njc3NjF9.C4GzANyceL3k2WUZuFR8xfgoI5EsW20Y31uBTKO3m34
+Accept-Language: en_US
+---
+lastSyncDate saved: 2018-10-19
+[Debug] OAuth2: RESPONSE
+HTTP/1.1 429 client error
+Content-Length: 99
+Content-Type: application/json
+retry-after: 1216
+fitbit-rate-limit-limit: 150
+fitbit-rate-limit-reset: 1216
+cf-ray: 46c50698397aae0e-BOS
+fitbit-rate-limit-remaining: 0
+Server: cloudflare
+expect-ct: max-age=604800, report-uri="https://report-uri.cloudflare.com/cdn-cgi/beacon/expect-ct"
+x-frame-options: SAMEORIGIN, SAMEORIGIN
+x-gateway-error: ABOVE_RATE_LIMIT
+Date: Fri, 19 Oct 2018 17:39:44 GMT
+
+{"errors":[{"errorType":"system","fieldName":"n/a","message":"Too Many Requests"}],"success":false}
+---
+[Debug] parseData: choked on: {"errors":[{"errorType":"system","fieldName":"n/a","message":"Too Many Requests"}],"success":false}
+[Debug] postHealthKitSave: entering postHealthKitSave()
+[Debug] postHealthKitSave: results: 
+  saved: 0
+  skipped: 0
+  errors: 0

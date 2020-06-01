@@ -1,0 +1,9 @@
+//
+//  release.example.xcconfig
+//  AriaSync
+//
+//  Created by Steve Cochran on 1/7/19.
+//
+
+FITBIT_API_CLIENT_ID=INSERT_FITBIT_API_CLIENT_ID
+FITBIT_API_CLIENT_SECRET=INSERT_FITBIT_API_CLIENT_SECRET
